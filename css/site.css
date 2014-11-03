@@ -1,0 +1,173 @@
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body,html {
+	width: 100%; height: 100%;
+	margin: 0; padding: 0;
+	font-family: 'Lato',sans-serif;
+}
+.pineapple {
+	background-image: url(https://31.media.tumblr.com/7ad5eb7532199d6b0f4055303b228f8c/tumblr_n39np4e7Tq1sosriro1_500.jpg);
+	background-size: contain;
+	background-attachment: fixed;
+	background-position: center;
+}
+.white {
+	background: white;
+	color: black;
+}
+.black {
+	background: black;
+	color: white;
+}
+.intro {
+	height: 100%;
+	background-size: auto 90%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	position: relative;
+}
+.frame {
+	height: 100%;
+	background-size: auto 90%;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	position: relative;
+}
+.down-arrow {
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+	text-align: center;
+	-webkit-animation: bouncy 4.0s ease infinite;
+	-moz-animation: bouncy 4.0s ease infinite;
+	animation: bouncy 4.0s ease infinite;
+}
+@-webkit-keyframes bouncy { 50% { -webkit-transform: translateY(30px); } }
+@-moz-keyframes bouncy { 50% { -moz-transform: translateY(30px); } }
+@keyframes bouncy { 50% { transform: translateY(30px); } }
+
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+h1 {
+	font-weight: 300;
+}
+h2 {
+	font-weight: 300;
+}
+p {
+	font-weight: 300;
+	line-height: 1.5em;
+}
+h1.big {
+	font-size: 6vw;
+	height: 12vw;
+	padding: 0.5em;
+	margin: 0;
+}
+.gucci {
+	border-radius: 200px;
+	margin: 10px;
+}
+.yellow {
+	color: yellow;
+}
+.flowers {
+	background-image:url(http://31.media.tumblr.com/f4fb08f948bd643bfbfbe824716e1d9b/tumblr_n1kup8gTk71rvfjldo2_1280.png);
+	background-size: cover;
+	background-position: center bottom;
+	min-height: 1800px;
+}
+.chain {
+	height: 200px;
+	padding: 10px;
+	position: relative;
+}
+.chain figure {
+	margin: 10px;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.chain span {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	background: white;
+	padding: 5px;
+}
+.chain:nth-child(4n+1) figure {
+	background-image: url(http://i.ebayimg.com/00/s/MTAyM1gxMTY0/z/LdoAAOxy4eJTM3NH/$_35.JPG);
+}
+.chain:nth-child(4n+2) figure {
+	background-image: url(http://hiphop-jewels.com/eBay/images/items/NPRODUCT/_MG_9879.jpg);
+}
+.chain:nth-child(4n+3) figure {
+	background-image: url(http://hiphop-jewels.com/eBay/images/items/NPRODUCT/IMG_3852.JPG);
+}
+.chain:nth-child(4n+4) figure {
+	background-image: url('http://i.ebayimg.com/00/s/MTIwMFgxMDc0/$(KGrHqF,!oMFC3OZgs2LBQy9nc7enQ~~60_12.JPG');
+}
+
+.chain:nth-child(4n+1) figure.chain2 {
+	background-image: url(http://www.b2bling.com/out/pictures/master/product/1/sol_pn3496gd_1.jpg);
+}
+.chain:nth-child(4n+2) figure.chain2 {
+	background-image: url(http://www.iced-out.biz/shop/out/pictures/master/product/1/sol_pn3470gd_1.jpg);
+}
+.chain:nth-child(4n+3) figure.chain2 {
+	background-image: url(http://site.hiphopbling.com/yswimages/gold-dollar-sign-bling-bling-pendant-chain-small.jpg);
+}
+.chain:nth-child(4n+4) figure.chain2 {
+	background-image: url(http://www.fashionjewelryforeveryone.com/HipHopBigBigPhotos/hh070.jpg);
+}
+
+.clouds {
+	background-image: url(https://s3.amazonaws.com/luckyplop/5b39815f66ce28b806bb990871105d88a6cbf7f5.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.gallery-rapper {
+	width: 100%;
+	padding: 10vw;
+}
+.gallery {
+	width: 90%;
+	background: white;
+}
+.gallery div {
+	background-position: top center !important;
+}
+.zigzag img {
+	width: 100%;
+}
+.footer {
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: 100;
+	padding: 100px 0 50px 0;
+}
+.globe {
+	width: 63px;
+	height: 63px;
+	border-radius: 100px;
+	box-shadow: 0 0 10px #fff;
+	margin-bottom: 14px;
+	background: white;
+}
+a {
+	text-decoration: none;
+	border-bottom: 1px dashed;
+}
+.black a {
+	color: white;
+}

@@ -1,0 +1,129 @@
+#lightbox_curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  cursor: pointer;
+  display: none;
+}
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+#lightbox_cell {
+  display: table-cell;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+#lightbox_cell img {
+  box-shadow: 0 0 10px #000000;
+  margin: 1% auto 0;
+  max-height: 75%;
+  max-width: 77%;
+  text-align: center;
+}
+#lightbox_caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #fff;
+  font-weight: 300;
+}
+#lightbox_caption a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px dotted white;
+}
+#lightbox_prev {
+  display: table-cell;
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  top: 50%;
+  left: 40px;
+  margin-top: -100px;
+  font-size: 0px;
+  opacity: 0.9;
+  background-image: url(../img/arrow-left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s;
+}
+#lightbox_next {
+  display: table-cell;
+  cursor: pointer;
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  top: 50%;
+  right: 40px;
+  margin-top: -100px;
+  font-size: 0px;
+  opacity: 0.9;
+  background-image: url(../img/arrow-right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s;
+}
+#lightbox_close {
+  display: table-cell;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 40px;
+  margin-top: -20px;
+  right: 40px;
+  opacity: 1.0;
+  cursor: pointer;
+  font-size: 0px;
+  background-image: url(../img/close.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  -webkit-transform: scale(1.0);
+  transition: transform 0.2s;
+}
+#lightbox_loading {
+	position: absolute;
+	background: rgba(255,255,255,1.0);
+	border-radius: 1px;
+	box-shadow: 0 1px 1px #000;
+	padding: 4px;
+}
+#lightbox_prev:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#lightbox_next:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#lightbox_close:hover {
+  opacity: 1;
+}
