@@ -101,8 +101,10 @@
 	</div>
 	<div class="black">
 		<div class="gallery height-50 black" style="background-color:black; width:100%!important">
+			<div style="background-image:url(http://styleblast.s3.amazonaws.com/lagerfest/img/img/originals/DSC_0757.jpg);background-size:cover;background-position:100% 80%!important;"></div>
 			<div style="background-image:url(http://styleblast.s3.amazonaws.com/lagerfest/img/img/originals/DSC_0758.jpg);background-size:cover;background-position:100% 80%!important;"></div>
 			<div style="background-image:url(http://styleblast.s3.amazonaws.com/lagerfest/img/img/originals/DSC_0759.jpg);background-size:cover;background-position:100% 80%!important;"></div>
+			<div style="background-image:url(http://styleblast.s3.amazonaws.com/lagerfest/img/img/originals/DSC_0762.jpg);background-size:cover;background-position:100% 80%!important;"></div>
 			<div style="background-image:url(http://styleblast.s3.amazonaws.com/lagerfest/img/img/originals/DSC_0763.jpg);background-size:cover;background-position:100% 80%!important;"></div>
 			<div style="background-image:url(http://styleblast.s3.amazonaws.com/lagerfest/img/img/originals/DSC_0764.jpg);background-size:cover;background-position:100% 80%!important;"></div>
 		</div>
@@ -427,6 +429,11 @@ $(function(){
 	})
 	$(".photos").oklightbox()
 	$("body").addClass("loaded")
+	if (window.location.hash.indexOf("/photos/")) {
+		var id = window.location.hash.split("#/photos/")[1]
+		id = parseInt(id)
+		$(".photos img").eq(id).trigger("click")
+	}
 })
 </script>
 </body>

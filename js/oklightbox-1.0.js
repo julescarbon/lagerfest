@@ -131,6 +131,8 @@ $(function(){
 				if (caption.length) caption += '<br><br>'
 				caption += '<a href="' + Lightbox.current.original +'">Download full size</a>'
 				$caption.html(caption);
+
+				window.history && history.pushState({}, document.title + " | Gallery", window.location.pathname + "#/photos/" + Lightbox.index);
 			},
 
 			loaded: function () {
@@ -173,6 +175,7 @@ $(function(){
 				  okzoom.initialized = false
 				  okzoom.mouseout(okzoom, last_mouse_event)
 				}
+				window.history && history.pushState({}, document.title, "/");
 			}
 		}
 
