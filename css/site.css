@@ -171,6 +171,13 @@ a {
 .black a {
 	color: white;
 }
+a.icon {
+	border: 0;
+}
+a.icon img {
+	width: 24px;
+	height: 24px;
+}
 .image {
 	background-size: cover; background-position:center;
 }

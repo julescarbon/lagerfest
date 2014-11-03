@@ -382,15 +382,14 @@
 	</div>
 	<div class="black footer">
 		<div class="grid-container">
-			<div class="grid-30">
+			<div class="grid-60">
 				<img src="img/choupette.gif">
 			</div>
-			<div class="grid-55">
-				<br>
-				<br>
-			</div>
-			<div class="grid-15 right">
-				<br>
+			<div class="grid-40 right">
+        <a href="#" target="_blank" class='icon fb'><img src="http://i.asdf.us/im/6b/Facebook32_1414992937_jules.png"></a>
+        &nbsp;
+				<a href="#" target="_blank" class='icon tw'><img src="http://i.asdf.us/im/67/Twitter32_1414992905_jules.png"></a>
+				<br><br>
 				&copy; Lagerfest 2014
 			</div>
 		</div>
@@ -434,6 +433,23 @@ $(function(){
 		id = parseInt(id)
 		$(".photos img").eq(id).trigger("click")
 	}
+
+	$(".fb").click(function (e) {
+	  e.preventDefault()
+	  var msg = "Lagerfest 2014"
+// 	  var link = window.location.origin + window.location.pathname
+ 	  var link = "http://lagerfest2014.com/"
+		var url = "https://www.facebook.com/share.php?u=" + encodeURIComponent(link) + "&t=" + encodeURIComponent(msg);
+		window.open(url, "_blank")
+	})
+	$(".tw").click(function (e) {
+	  e.preventDefault()
+	  var msg = "Lagerfest 2014! "
+ 	  var link = "lagerfest2014.com"
+		var url = "https://twitter.com/home?status=" + encodeURIComponent(msg + " " + link);
+		window.open(url, "_blank")
+	})
+
 })
 </script>
 </body>
