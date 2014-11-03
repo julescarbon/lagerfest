@@ -40,7 +40,7 @@
 </head>
 <body>
 	<div class="intro" style="background-image: url(http://styleblast.s3.amazonaws.com/lagerfest/img/img/originals/DSC_0636.jpg);">
-		<span class="down-arrow"><img src="img/down-arrow.png"></span>
+		<span class="down-arrow"><img src="img/down-arrow-white-outline.png"></span>
 	</div>
 	<div class="white header">
 		<h1 class="wow center big bounceIn" data-wow-delay="0.5s">Lagerfest 2014.</h1>
@@ -423,6 +423,9 @@ $(function(){
 		dots: false,
 		aspect: false,
 		delayTime: 1200,
+	})
+	$(".down-arrow").click(function(){
+		$("body,html").animate({scrollTop: $(".header").offset().top }, 900)
 	})
 	$(".photos").oklightbox()
 	$("body").addClass("loaded")
