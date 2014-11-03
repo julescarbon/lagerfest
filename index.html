@@ -1,5 +1,21 @@
 <!doctype html>
 <html>
+<!--
+                                                                                                                                                
+8 8888                  .8.           ,o888888o.    8 8888888888   8 888888888o.   8 8888888888   8 8888888888     d888888o. 8888888 8888888888 
+8 8888                 .888.         8888     `88.  8 8888         8 8888    `88.  8 8888         8 8888         .`8888:' `88.     8 8888       
+8 8888                :88888.     ,8 8888       `8. 8 8888         8 8888     `88  8 8888         8 8888         8.`8888.   Y8     8 8888       
+8 8888               . `88888.    88 8888           8 8888         8 8888     ,88  8 8888         8 8888         `8.`8888.         8 8888       
+8 8888              .8. `88888.   88 8888           8 888888888888 8 8888.   ,88'  8 888888888888 8 888888888888  `8.`8888.        8 8888       
+8 8888             .8`8. `88888.  88 8888           8 8888         8 888888888P'   8 8888         8 8888           `8.`8888.       8 8888       
+8 8888            .8' `8. `88888. 88 8888   8888888 8 8888         8 8888`8b       8 8888         8 8888            `8.`8888.      8 8888       
+8 8888           .8'   `8. `88888.`8 8888       .8' 8 8888         8 8888 `8b.     8 8888         8 8888        8b   `8.`8888.     8 8888       
+8 8888          .888888888. `88888.  8888     ,88'  8 8888         8 8888   `8b.   8 8888         8 8888        `8b.  ;8.`8888     8 8888       
+8 888888888888 .8'       `8. `88888.  `8888888P'    8 888888888888 8 8888     `88. 8 8888         8 888888888888 `Y8888P ,88P'     8 8888       
+
++ curated by winslow porter /  html by julie lala + okfocus /  photos ahprojects /  dj by dj johnny cocco /  hella interactive 2014 babe!
+
+-->
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -415,17 +431,14 @@
 <script>
 $(function(){
 	new WOW().init();
-// 	$(".gucci-intro").click(function(){
-// 		$("body,html").animate({ scrollTop: $('h1').first().offset().top }, 500)
-// 	})
+	$(".intro").click(function(){
+		$("body,html").animate({ scrollTop: $('h1').first().offset().top }, 500)
+	})
 	$(".gallery").okgallery({
 		autoplay: true,
 		dots: false,
 		aspect: false,
 		delayTime: 1200,
-	})
-	$(".down-arrow").click(function(){
-		$("body,html").animate({scrollTop: $(".header").offset().top }, 900)
 	})
 	$(".photos").oklightbox()
 	$("body").addClass("loaded")
